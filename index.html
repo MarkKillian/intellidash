@@ -12,24 +12,56 @@
   </head>
 
   <body>
-  <div class="container-fluid">
-    <header>
+    <header class="container-fluid">
       <div class="logo">
         <img src="assets/images/icon.png" alt="Intellidash logo">
-        <h1>Intellidash</h1>
       </div>
-      <div class="nav">
-        <button type="button" class="btn btn-default">
-          <span class="glyphicon glyphicon-menu-hamburger"></span>
-        </button>
+      <div class="text">
+        Intellidash
       </div>
-    </header>
-    <main>
 
-    </main>
-    <footer>
-      
-    </footer>
-  </div>  
+      <nav>
+        <button type="button" class="btn btn-primary logout hidden-xs">Logout</button>
+        <button type="button" class="btn btn-default menu visible-xs-inline-block"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+      </nav>
+    </header>
+
+    <main class="container-fluid">
+      <div class="row">
+        <div class="sidebar col-xs-12 col-sm-3 col-md-2">
+
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+          </div>
+
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#"><span class="glyphicon glyphicon-dashboard"> Dashboard</span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"> Customers</span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart">  Orders</span></a></li>
+            <li class="visible-xs-block"><a href="#"><span class="glyphicon glyphicon-chevron-left"> Logout</span></a></li>
+          </ul>
+
+        </div>
+        <div class="content col-xs-12 col-sm-9 col-md-10">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div></div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+             <div></div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div></div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main> 
   </body>
 </html>

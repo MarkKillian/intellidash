@@ -1,34 +1,70 @@
-body{
-  margin: 0;
-  padding: 0;
+html,body{
+  height:100%;
 }
-body .container-fluid{
-  padding: 0;
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
 }
 /* Header */
 header{
-  background-color: #ccc;
-  border-bottom: 2px solid #666;
-  margin: 0;
-  padding: 0 25px;
   height:80px;
-  overflow: auto;
+  background-color:rgb(248,248,248);
+  line-height: 80px;
+  border-bottom: 2px solid #666;
 }
 header .logo{
-  padding:0;
   float:left;
-  width:50%;
-  margin-right:0;
 }
-header h1{
-  font-weight:300;
-  display:inline-block;
-  padding-left: 10px;
+header .text{
+  font-size: 22px;
+  float:left;
+  margin-left: 12px;
 }
-header .nav{
+header nav{
   float:right;
-  display: inline-block;
-  line-height: 75px;
+}
+
+/* Wireframing*/
+.content div[class*="col-"]{
+  padding: 15px;
+}
+.content div[class*="col-"] div{
+  background-color: green;
+  height:100px;
+}
+/* Main */
+.sidebar{
+  border-right:2px solid #666;
+  height:100%;
+  padding: 0;
+  background-color:rgb(248,248,248);
+}
+.content{
+  height:100%; 
+}
+.sidebar .input-group{
+  padding:15px;
+  border-bottom:2px solid #666;
+} 
+.sidebar .nav{
+  font-size: 16px;
+  margin-top: 0;
+}
+.sidebar .nav li{
+  margin-top: 0;
+}
+.sidebar .nav li a{
+  color:#222;
+  padding:15px;
+  border-bottom: 1px solid #666;
+}
+.sidebar .nav li a .glyphicon{
+  margin-right:5px;
 }
 
 /* Media Queries */
+@media screen and (min-width: 768px){
+  main, main .row{
+    height:100%;
+  }
+}
